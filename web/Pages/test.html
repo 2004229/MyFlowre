@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/universal.css" rel="stylesheet">
+    <link href="../css/Menu.css" rel="stylesheet">
+    <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <title>test</title>
+    <style>
+        /* 模态框样式 */
+        .modal-content {
+            background-color: #fff; /* 模态框背景颜色 */
+        }
+
+        /* 按钮样式 */
+        .btn-primary {
+            background-color: #007bff; /* 主要按钮背景颜色 */
+            border-color: #007bff;
+        }
+
+        .btn-secondary {
+            background-color: #6c757d; /* 次要按钮背景颜色 */
+            border-color: #6c757d;
+        }
+
+        .btn-light {
+            background-color: #f8f9fa; /* 浅色按钮背景颜色 */
+            border-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+<!-- 模态框（Modal） -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="productModalLabel">选择操作</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <!-- 这里可以添加产品信息 -->
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">加入购物车</button>
+                <button type="button" class="btn btn-secondary">立即购买</button>
+                <button type="button" class="btn btn-light">收藏</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    // 等待DOM加载完成
+    document.addEventListener('DOMContentLoaded', function() {
+        // 获取所有广告链接
+        const advLinks = document.querySelectorAll('.content_img');
+
+        // 为每个广告链接添加点击事件监听器
+        advLinks.forEach(link => {
+            link.addEventListener('click', function(event) {
+                event.preventDefault(); // 阻止链接的默认行为
+
+                // 显示模态框
+                const productModal = new bootstrap.Modal(document.getElementById('productModal'));
+                productModal.show();
+            });
+        });
+    });
+
+</script>
+</body>
+</html>

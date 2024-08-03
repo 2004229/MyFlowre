@@ -1,0 +1,103 @@
+@charset "UTF-8";
+
+body{
+    font-family: 方正姚体, serif;
+    font-size: 25px;
+    color: #773333;
+    background-image: linear-gradient(0deg, #a8edea 0%, #fed6e3 100%);
+    margin: 0; /* 移除默认外边距 */
+    display: flex;
+    flex-direction: column; /* 设置主轴方向为垂直 */
+    align-items: center; /* 在交叉轴上居中所有子元素 */
+    /* 移除固定宽度，让body自适应浏览器宽度 */
+    width: 100%;
+    min-width: 1470px; /* 可以设置一个最小宽度，但不应限制最大宽度 */
+}
+main {
+    width: 100%;
+    max-width: 1470px; /* 设置最大宽度，但允许内容在小屏幕上缩小 */
+    margin: auto; /* 上下外边距自动，使main在body中垂直居中 */
+    flex-grow: 1; /* 使main占据剩余空间 */
+}
+header{
+    width: 100%;
+}
+
+.custom-dropdown .dropdown-toggle::after{
+    display: none;
+}
+
+/* 默认情况下，Bootstrap 已经为.dropdown-item提供了悬停效果 */
+.dropdown-menu > li > a:hover {
+    background-image:linear-gradient(120deg,#e0c3fc 0%, #8ec5fc 100%) !important;
+    border-radius: 10px;
+}
+
+/* 底部样式 */
+.footer {
+    background-image:linear-gradient(0deg,#d9afd9 0%, #97d9e1 100%);
+    padding: 20px 0; /* 上下内边距 */
+    font-size: 0.9rem; /* 字体大小 */
+    width: 100%; /* 让导航栏和底部区域的宽度始终为100% */
+}
+
+/* 响应式网格布局 */
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* 列之间的间隔 */
+    justify-content: center; /* 水平居中 */
+}
+
+/* 列样式 */
+.footer-col {
+    flex: 1; /* 列占据可用空间 */
+    max-width: 300px; /* 最大宽度 */
+    padding: 0 15px; /* 左右内边距 */
+}
+
+/* 联系信息列表 */
+.contact-list {
+    list-style: none; /* 移除列表样式 */
+    padding: 0;
+    margin: 0;
+}
+
+.contact-list li {
+    padding: 5px 0; /* 列表项之间的间隔 */
+}
+
+/* 版权信息 */
+.copyright {
+    text-align: center; /* 文本居中 */
+    padding: 10px 0; /* 上下内边距 */
+    font-size: 0.8rem; /* 字体大小 */
+    background-image:linear-gradient(0deg,#9795f0 0%, #fbc8d4 100%)
+}
+
+/* 社交媒体列表 */
+.social-media-list {
+    list-style-type: none; /* 移除列表符号 */
+    padding: 0;
+    margin: 0;
+}
+
+.social-media-list li {
+    padding: 5px 0; /* 列表项之间的间隔 */
+}
+
+.social-media-list a {
+    font-size: 0.9rem; /* 与前面的字体大小统一 */
+    text-decoration: none; /* 移除下划线 */
+    transition: color 0.3s; /* 平滑的颜色过渡效果 */
+    color: #595050;
+}
+.social-media-list a:hover{
+    color: white;
+}
+.active {
+    background-image:linear-gradient(0deg,#fbc2eb 0%, #a6c1ee 100%);/* 激活时的背景颜色 */
+    color: #ffa2bf; /* 激活时的文字颜色 */
+    border-radius: 10px;
+    font-size: 25px;
+}

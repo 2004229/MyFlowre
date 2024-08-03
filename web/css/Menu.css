@@ -1,0 +1,192 @@
+@charset "UTF-8";
+
+.image_menu{
+	width:65%;
+	border-radius: 20px;
+	height: 280px;
+}
+
+.list_menu{
+	padding: 33px 4px 2px;
+}
+
+.font_menu{
+	color: #773333;
+	font-size: 35px;
+	text-decoration: none;
+	flex-grow: 1;
+	display: block; /* 让链接占据整个列表项的空间 */
+	width: 100%; /* 宽度填满 */
+	text-align: left; /* 如果需要左对齐文本 */
+	border-radius: 4px;
+}
+.view_menu{
+	padding-top: 33px;
+	padding-bottom: 10px;
+}
+.menu_row{
+	height: 33%;
+}
+.menu_col{
+	display: flex;
+	flex-direction: column; /* 使子元素垂直排列 */
+	align-items: start;
+	justify-content: center; /* 垂直居中 */
+}
+.menu_col:hover{
+	border: 1px solid #ff6898 !important;
+	border-radius: 10px;
+}
+.menu_col a{
+	text-decoration: none;
+}
+
+.menu_col a img{
+	height: 70px;
+	width: 70px;
+	border-radius: 30px;
+}
+.menu_col a h3{
+	margin: 0;
+	padding-left: 10px;
+	display: inline-block;
+	color: #bf1e1e;
+	font-size: 25px;
+}
+/*中间主体部分样式*/
+.middle_left{
+	opacity: 0.8;
+	background-image:linear-gradient(0deg,#d9afd9 0%, #97d9e1 100%);
+}
+
+.middle_left_nav{
+	padding: 0;
+	display: flex;
+	flex-direction: column; /* 确保子元素垂直排列 */
+	width: 100%; /* 宽度填满 */
+	height: 100%; /* 高度填满 */
+	opacity: 0.8;
+	background-image:linear-gradient(0deg,#fdcbf1 0%, #fdcbf1 1%, #e6dee9 100%);
+}
+
+.middle_right{
+	background-image:linear-gradient(0deg,#d9afd9 0%, #97d9e1 100%);
+	height: 640px;
+}
+.content{
+	display: none;
+}
+.col-4{
+	display: flex;
+	flex-direction: column; /* 使子元素垂直排列 */
+	align-items: center; /* 水平居中 */
+	justify-content: center; /* 垂直居中 */
+	height: 320px;
+	width: 230px;
+}
+.col-4:hover{
+	border: 1px solid #f6467e !important;
+	border-radius: 10px;
+
+}
+.content_img{
+	width: 100%; /* 使图片宽度适应容器宽度 */
+	height: auto; /* 保持图片比例 */
+	border-radius: 8px;
+}
+.content_price{
+	/*display: flex;*/
+	/*flex-direction: column; !* 子元素垂直排列 *!*/
+	/*align-items: flex-start; !* 子元素在交叉轴的起始边缘对齐 *!*/
+	width: 90%;
+	padding: 5px;
+	height: auto;
+	text-align: left;
+}
+
+/* 调整文本样式 */
+.content_price p{
+	font-size: 12px;
+	color: #a56262;
+}
+.content_price h2,
+.content_price h3 {
+	margin: 0; /* 移除外边距 */
+}
+
+.content_price h2{
+	display: inline-block; /* 使h2和h3作为内联块元素 */
+	font-size: 15px;
+	color: #f68209;
+}
+.content_price h3{
+	display: inline-block; /* 使h2和h3作为内联块元素 */
+	font-size: 10px;
+	color: #6a676a;
+}
+.content_price h4{
+	height: 15px;
+	color: #f68209;
+	font-size: 13px;
+}
+
+/* 鼠标悬停在导航链接上时的样式 */
+.nav-link:hover {
+	background-image:linear-gradient(-225deg,#69EACB 0%, #EACCF8 48%, #6654F1 100%);
+	color: #f69b9b; /* 激活时的文字颜色 */
+	border-radius: 10px;
+}
+.adv{
+	width: 100%;
+}
+.adv_img{
+	width: 90%;
+	height: 60%;
+	border-radius: 10px;
+}
+.adv_price{
+	width: 90%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	height: 30%;
+	text-align: left;
+}
+.adv_price p{
+	font-size: 12px;
+	color: #a56262;
+}
+.adv_price h2{
+	display: inline-block;
+	text-align: left;
+	font-size: 24px;
+	color: #f68209;
+}
+.adv_price h3{
+	display: inline-block;
+	text-align: left;
+	font-size: 10px;
+	color: #6a676a;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+	/* 确保按钮宽度足够，以便更容易点击 */
+	width: 45px;
+	opacity: 0.3; /* 初始透明度 */
+	transition: opacity 0.3s, background-color 0.3s; /* 平滑的透明度和背景颜色过渡效果 */
+	background-image:linear-gradient(0deg,#fad0c4 0%, #fad0c4 1%, #ffd1ff 100%)
+}
+
+/* 鼠标悬停效果 */
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+	background-image:linear-gradient(0deg, #f8d2c8 0%, #f3c1b4 1%, #f6bff6 100%);/* 鼠标悬停时的背景颜色 */
+	opacity: 0.5; /* 鼠标悬停时的透明度 */
+}
+
+/* 确保图标可见 */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+	width: 20px;
+	height: 20px;
+}
