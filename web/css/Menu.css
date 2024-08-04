@@ -71,6 +71,7 @@
 
 .middle_right{
 	background-image:linear-gradient(0deg,#d9afd9 0%, #97d9e1 100%);
+	opacity: 1;
 	height: 640px;
 }
 .content{
@@ -84,33 +85,43 @@
 	height: 320px;
 	width: 230px;
 }
+.col-4 a{
+	width: 100%;
+	height: 98%;
+}
+
 .col-4:hover{
 	border: 1px solid #f6467e !important;
 	border-radius: 10px;
-
 }
 .content_img{
-	width: 100%; /* 使图片宽度适应容器宽度 */
-	height: auto; /* 保持图片比例 */
+	width: 105px; /* 使图片宽度适应容器宽度 */
+	height: 150px; /* 保持图片比例 */
 	border-radius: 8px;
+	display: block; /* 将图片作为块级元素显示 */
+	margin-left: auto; /* 左边距设为自动 */
+	margin-right: auto; /* 右边距设为自动 */
 }
 .content_price{
 	/*display: flex;*/
 	/*flex-direction: column; !* 子元素垂直排列 *!*/
 	/*align-items: flex-start; !* 子元素在交叉轴的起始边缘对齐 *!*/
-	width: 90%;
-	padding: 5px;
+	width: 100%;
+	padding: 1px;
 	height: auto;
 	text-align: left;
 }
 
 /* 调整文本样式 */
 .content_price p{
+	height: 50px;
+	margin: 0;
 	font-size: 12px;
 	color: #a56262;
 }
 .content_price h2,
 .content_price h3 {
+	height: 10px;
 	margin: 0; /* 移除外边距 */
 }
 
@@ -125,7 +136,7 @@
 	color: #6a676a;
 }
 .content_price h4{
-	height: 15px;
+	height: 10px;
 	color: #f68209;
 	font-size: 13px;
 }
