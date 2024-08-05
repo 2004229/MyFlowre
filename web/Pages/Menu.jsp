@@ -1,4 +1,3 @@
-<%@ page import="java.util.*" %>
 <%@page contentType="text/html;charset=utf-8"%>
 <!DOCTYPE html>
 <html lang="en">
@@ -19,7 +18,7 @@
       <!-- Logo -->
         <a href="#" class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-info text-decoration-none dropdown-toggle" id="dropdownNavLink" data-bs-toggle="dropdown" aria-expanded="false">
             <svg width="40" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M6 15L6 5C6 3.89543 6.89543 3 8 3L16 3C17.1046 3 18 3.89543 18 5L18 19C18 20.1046 17.1046 21 16 21L8 21C6.89543 21 6 20.1046 6 19V19C6 18.4477 6.44772 18 7 18L15 18" stroke="#D783F6" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M6 15L6 5C6 3.89543 6.89543 3 8 3L16 3C17.1046 3 18 3.89543 18 5L18 19C18 20.1046 17.1046 21 16 21L8 21C6.89543 21 6 20.1046 6 19V19C6 18.4477 6.44772 18 7 18L15 18" stroke="#D783F6" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
         </a>
         <!-- Logo下拉菜单 -->
@@ -74,35 +73,35 @@
                             <li class="nav-item ">
                                 <a class="menu-link active font_menu" href="#menu1" >店铺好物
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11.5703 10.5965L7.86105 6.67917C7.58114 6.40185 6.25139 5.00368 7.5811 3.6055C8.91088 2.20724 10.2406 3.60544 10.6838 4.07154L16.0027 9.66442C17.3324 11.0626 17.3324 12.9269 16.0027 14.3252C13.7427 16.7017 11.652 18.7905 10.6838 19.918C10.2406 20.4343 8.91083 21.7823 7.58111 20.3841C6.25139 18.9859 7.58111 17.5876 8.02435 17.1216L11.5703 13.393" stroke="black"/>
+                                        <path d="M11.5703 10.5965L7.86105 6.67917C7.58114 6.40185 6.25139 5.00368 7.5811 3.6055C8.91088 2.20724 10.2406 3.60544 10.6838 4.07154L16.0027 9.66442C17.3324 11.0626 17.3324 12.9269 16.0027 14.3252C13.7427 16.7017 11.652 18.7905 10.6838 19.918C10.2406 20.4343 8.91083 21.7823 7.58111 20.3841C6.25139 18.9859 7.58111 17.5876 8.02435 17.1216L11.5703 13.393" stroke="black"></path>
                                     </svg>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="menu-link font_menu"  href="#menu2" >千人购买
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11.5703 10.5965L7.86105 6.67917C7.58114 6.40185 6.25139 5.00368 7.5811 3.6055C8.91088 2.20724 10.2406 3.60544 10.6838 4.07154L16.0027 9.66442C17.3324 11.0626 17.3324 12.9269 16.0027 14.3252C13.7427 16.7017 11.652 18.7905 10.6838 19.918C10.2406 20.4343 8.91083 21.7823 7.58111 20.3841C6.25139 18.9859 7.58111 17.5876 8.02435 17.1216L11.5703 13.393" stroke="black"/>
+                                        <path d="M11.5703 10.5965L7.86105 6.67917C7.58114 6.40185 6.25139 5.00368 7.5811 3.6055C8.91088 2.20724 10.2406 3.60544 10.6838 4.07154L16.0027 9.66442C17.3324 11.0626 17.3324 12.9269 16.0027 14.3252C13.7427 16.7017 11.652 18.7905 10.6838 19.918C10.2406 20.4343 8.91083 21.7823 7.58111 20.3841C6.25139 18.9859 7.58111 17.5876 8.02435 17.1216L11.5703 13.393" stroke="black"></path>
                                     </svg>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="menu-link font_menu" href="#menu3" >心之所向
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11.5703 10.5965L7.86105 6.67917C7.58114 6.40185 6.25139 5.00368 7.5811 3.6055C8.91088 2.20724 10.2406 3.60544 10.6838 4.07154L16.0027 9.66442C17.3324 11.0626 17.3324 12.9269 16.0027 14.3252C13.7427 16.7017 11.652 18.7905 10.6838 19.918C10.2406 20.4343 8.91083 21.7823 7.58111 20.3841C6.25139 18.9859 7.58111 17.5876 8.02435 17.1216L11.5703 13.393" stroke="black"/>
+                                        <path d="M11.5703 10.5965L7.86105 6.67917C7.58114 6.40185 6.25139 5.00368 7.5811 3.6055C8.91088 2.20724 10.2406 3.60544 10.6838 4.07154L16.0027 9.66442C17.3324 11.0626 17.3324 12.9269 16.0027 14.3252C13.7427 16.7017 11.652 18.7905 10.6838 19.918C10.2406 20.4343 8.91083 21.7823 7.58111 20.3841C6.25139 18.9859 7.58111 17.5876 8.02435 17.1216L11.5703 13.393" stroke="black"></path>
                                     </svg>
                                 </a>
                             </li>
                             <li class="nav-item ">
                                 <a class="menu-link font_menu"  href="#menu4" >生活惊喜
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11.5703 10.5965L7.86105 6.67917C7.58114 6.40185 6.25139 5.00368 7.5811 3.6055C8.91088 2.20724 10.2406 3.60544 10.6838 4.07154L16.0027 9.66442C17.3324 11.0626 17.3324 12.9269 16.0027 14.3252C13.7427 16.7017 11.652 18.7905 10.6838 19.918C10.2406 20.4343 8.91083 21.7823 7.58111 20.3841C6.25139 18.9859 7.58111 17.5876 8.02435 17.1216L11.5703 13.393" stroke="black"/>
+                                        <path d="M11.5703 10.5965L7.86105 6.67917C7.58114 6.40185 6.25139 5.00368 7.5811 3.6055C8.91088 2.20724 10.2406 3.60544 10.6838 4.07154L16.0027 9.66442C17.3324 11.0626 17.3324 12.9269 16.0027 14.3252C13.7427 16.7017 11.652 18.7905 10.6838 19.918C10.2406 20.4343 8.91083 21.7823 7.58111 20.3841C6.25139 18.9859 7.58111 17.5876 8.02435 17.1216L11.5703 13.393" stroke="black"></path>
                                     </svg>
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a class="menu-link font_menu" href="#menu5" >星河是你
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M11.5703 10.5965L7.86105 6.67917C7.58114 6.40185 6.25139 5.00368 7.5811 3.6055C8.91088 2.20724 10.2406 3.60544 10.6838 4.07154L16.0027 9.66442C17.3324 11.0626 17.3324 12.9269 16.0027 14.3252C13.7427 16.7017 11.652 18.7905 10.6838 19.918C10.2406 20.4343 8.91083 21.7823 7.58111 20.3841C6.25139 18.9859 7.58111 17.5876 8.02435 17.1216L11.5703 13.393" stroke="black"/>
+                                        <path d="M11.5703 10.5965L7.86105 6.67917C7.58114 6.40185 6.25139 5.00368 7.5811 3.6055C8.91088 2.20724 10.2406 3.60544 10.6838 4.07154L16.0027 9.66442C17.3324 11.0626 17.3324 12.9269 16.0027 14.3252C13.7427 16.7017 11.652 18.7905 10.6838 19.918C10.2406 20.4343 8.91083 21.7823 7.58111 20.3841C6.25139 18.9859 7.58111 17.5876 8.02435 17.1216L11.5703 13.393" stroke="black"></path>
                                     </svg>
                                 </a>
                             </li>
@@ -126,19 +125,19 @@
                         <!-- 轮播图片 -->
                         <div class="carousel-inner d-flex align-items-center rounded-5 my-4" style="height: 300px;background-image:linear-gradient(0deg,#fbc2eb 0%, #a6c1ee 100%)">
                             <div class="carousel-item active">
-                                <img  src="../res/images/Menu1.jpg" class="img-fluid d-block mx-auto image_menu" >
+                                <img  src="../res/images/Menu1.jpg" class="img-fluid d-block mx-auto image_menu"  alt="">
                             </div>
                             <div class="carousel-item">
-                                <img src="../res/images/Menu2.jpg" class="img-fluid d-block mx-auto image_menu" >
+                                <img src="../res/images/Menu2.jpg" class="img-fluid d-block mx-auto image_menu"  alt="">
                             </div>
                             <div class="carousel-item">
-                                <img src="../res/images/Menu3.jpg" class="img-fluid d-block mx-auto image_menu" >
+                                <img src="../res/images/Menu3.jpg" class="img-fluid d-block mx-auto image_menu"  alt="">
                             </div>
                             <div class="carousel-item">
-                                <img src="../res/images/Menu4.jpg" class="img-fluid d-block mx-auto image_menu" >
+                                <img src="../res/images/Menu4.jpg" class="img-fluid d-block mx-auto image_menu"  alt="">
                             </div>
                             <div class="carousel-item">
-                                <img src="../res/images/Menu5.jpg" class="img-fluid d-block mx-auto image_menu" >
+                                <img src="../res/images/Menu5.jpg" class="img-fluid d-block mx-auto image_menu"  alt="">
                             </div>
                         </div>
 
@@ -155,60 +154,78 @@
                     <div class="row menu_row">
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/19.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/19.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>开</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/20.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/20.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>业</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/21.jpg">
-                                <h3>33朵红玫瑰</h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row menu_row">
-                        <div class="col menu_col">
-                            <a href="#">
-                                <img src="../res/images/22.jpg">
-                                <h3>33朵红玫瑰</h3>
-                            </a>
-                        </div>
-                        <div class="col menu_col">
-                            <a href="#">
-                                <img src="../res/images/23.jpg">
-                                <h3>33朵红玫瑰</h3>
-                            </a>
-                        </div>
-                        <div class="col menu_col">
-                            <a href="#">
-                                <img src="../res/images/24.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/21.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>盛</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                     </div>
                     <div class="row menu_row">
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/25.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/22.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>典</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/26.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/23.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>优</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/27.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/24.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>惠</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row menu_row">
+                        <div class="col menu_col">
+                            <a href="#">
+                                <img src="../res/images/25.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>不</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                            </a>
+                        </div>
+                        <div class="col menu_col">
+                            <a href="#">
+                                <img src="../res/images/26.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>停</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                            </a>
+                        </div>
+                        <div class="col menu_col">
+                            <a href="#">
+                                <img src="../res/images/27.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>歇</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                     </div>
@@ -217,60 +234,78 @@
                     <div class="row menu_row">
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/28.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/28.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>为</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/29.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/29.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>心</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/30.jpg">
-                                <h3>33朵红玫瑰</h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row menu_row">
-                        <div class="col menu_col">
-                            <a href="#">
-                                <img src="../res/images/31.jpg">
-                                <h3>33朵红玫瑰</h3>
-                            </a>
-                        </div>
-                        <div class="col menu_col">
-                            <a href="#">
-                                <img src="../res/images/32.jpg">
-                                <h3>33朵红玫瑰</h3>
-                            </a>
-                        </div>
-                        <div class="col menu_col">
-                            <a href="#">
-                                <img src="../res/images/33.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/30.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>爱</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                     </div>
                     <div class="row menu_row">
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/34.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/31.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>的</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/35.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/32.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>她</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/36.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/33.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>挑</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row menu_row">
+                        <div class="col menu_col">
+                            <a href="#">
+                                <img src="../res/images/34.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>一</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                            </a>
+                        </div>
+                        <div class="col menu_col">
+                            <a href="#">
+                                <img src="../res/images/35.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>束</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                            </a>
+                        </div>
+                        <div class="col menu_col">
+                            <a href="#">
+                                <img src="../res/images/36.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>花</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                     </div>
@@ -279,60 +314,78 @@
                     <div class="row menu_row">
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/37.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/37.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>七</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/38.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/38.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>夕</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/39.jpg">
-                                <h3>33朵红玫瑰</h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row menu_row">
-                        <div class="col menu_col">
-                            <a href="#">
-                                <img src="../res/images/40.jpg">
-                                <h3>33朵红玫瑰</h3>
-                            </a>
-                        </div>
-                        <div class="col menu_col">
-                            <a href="#">
-                                <img src="../res/images/41.jpg">
-                                <h3>33朵红玫瑰</h3>
-                            </a>
-                        </div>
-                        <div class="col menu_col">
-                            <a href="#">
-                                <img src="../res/images/42.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/39.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>花</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                     </div>
                     <div class="row menu_row">
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/43.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/40.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>礼</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/44.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/41.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <img src="../res/icon/Valentine/Heart.svg" alt="" style="height: 30px;width: 30px;">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/45.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/42.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>情</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row menu_row">
+                        <div class="col menu_col">
+                            <a href="#">
+                                <img src="../res/images/43.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>深</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                            </a>
+                        </div>
+                        <div class="col menu_col">
+                            <a href="#">
+                                <img src="../res/images/44.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>意</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                            </a>
+                        </div>
+                        <div class="col menu_col">
+                            <a href="#">
+                                <img src="../res/images/45.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>长</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                     </div>
@@ -341,60 +394,78 @@
                     <div class="row menu_row">
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/46.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/46.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>花</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/47.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/47.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>香</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/48.jpg">
-                                <h3>33朵红玫瑰</h3>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="row menu_row">
-                        <div class="col menu_col">
-                            <a href="#">
-                                <img src="../res/images/49.jpg">
-                                <h3>33朵红玫瑰</h3>
-                            </a>
-                        </div>
-                        <div class="col menu_col">
-                            <a href="#">
-                                <img src="../res/images/50.jpg">
-                                <h3>33朵红玫瑰</h3>
-                            </a>
-                        </div>
-                        <div class="col menu_col">
-                            <a href="#">
-                                <img src="../res/images/51.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/48.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>寄</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                     </div>
                     <div class="row menu_row">
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/52.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/49.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>情</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/53.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/50.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <img src="../res/icon/Valentine/Heart.svg" alt="" style="height: 30px;width: 30px;">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                         <div class="col menu_col">
                             <a href="#">
-                                <img src="../res/images/54.jpg">
-                                <h3>33朵红玫瑰</h3>
+                                <img src="../res/images/51.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                    <h3>七</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="row menu_row">
+                        <div class="col menu_col">
+                            <a href="#">
+                                <img src="../res/images/52.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>夕</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                            </a>
+                        </div>
+                        <div class="col menu_col">
+                            <a href="#">
+                                <img src="../res/images/53.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>共</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                            </a>
+                        </div>
+                        <div class="col menu_col">
+                            <a href="#">
+                                <img src="../res/images/54.jpg" alt="">
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
+                                <h3>赏</h3>
+                                <img src="../res/icon/Valentine/Rose.svg" alt="" style="height: 30px;width: 30px;">
                             </a>
                         </div>
                     </div>
@@ -413,10 +484,10 @@
         <div class="d-grid gap-3" style="grid-template-columns: 1fr 10fr 1fr;">
             <div class="null"></div>
                 <div class="adv">
-                    <img src="../res/images/9.png" style="width: 25%;border-bottom-left-radius: 10px;border-top-left-radius: 10px;">
-                    <img src="../res/images/12.png" style="width: 24%">
-                    <img src="../res/images/11.png" style="width: 24%">
-                    <img src="../res/images/7.png" style="width: 25%;border-bottom-right-radius: 10px;border-top-right-radius: 10px;">
+                    <img src="../res/images/9.png" style="width: 25%;border-bottom-left-radius: 10px;border-top-left-radius: 10px;" alt="">
+                    <img src="../res/images/12.png" style="width: 24%" alt="">
+                    <img src="../res/images/11.png" style="width: 24%" alt="">
+                    <img src="../res/images/7.png" style="width: 25%;border-bottom-right-radius: 10px;border-top-right-radius: 10px;" alt="">
                 </div>
             <div class="null"></div>
         </div>
@@ -1223,8 +1294,8 @@
                 <a href="#" style="text-decoration: none;">
                     <img src="../res/images/2.jpg" class="adv_img">
                     <div class="adv_price">
-                        <p>  碎冰蓝99朵玫瑰送女友鲜花速递全国配送广州上海深圳</p>
-                        <h2>￥86.72</h2>
+                        <p>  粉玫瑰33朵玫瑰送女友鲜花全国配送上海深圳</p>
+                        <h2>￥90.11</h2>
                         <h3>5000+人已付款 四川</h3>
                     </div>
                 </a>
@@ -1233,8 +1304,8 @@
                 <a href="#" style="text-decoration: none;">
                     <img src="../res/images/3.jpg" class="adv_img">
                     <div class="adv_price">
-                        <p>  碎冰蓝99朵玫瑰送女友鲜花速递全国配送广州上海深圳</p>
-                        <h2>￥86.72</h2>
+                        <p>粉色玫瑰33朵七夕节限定包装全国配送</p>
+                        <h2>￥131.4</h2>
                         <h3>5000+人已付款 四川</h3>
                     </div>
                 </a>
@@ -1243,8 +1314,8 @@
                 <a href="#" style="text-decoration: none;">
                     <img src="../res/images/4.jpg" class="adv_img">
                     <div class="adv_price">
-                        <p>  碎冰蓝99朵玫瑰送女友鲜花速递全国配送广州上海深圳</p>
-                        <h2>￥86.72</h2>
+                        <p>  黑白玫瑰高级感氛围独特鲜花七夕节送女友鲜花</p>
+                        <h2>￥99.9</h2>
                         <h3>5000+人已付款 四川</h3>
                     </div>
                 </a>
@@ -1253,8 +1324,8 @@
                 <a href="#" style="text-decoration: none;">
                     <img src="../res/images/5.jpg" class="adv_img">
                     <div class="adv_price">
-                        <p>  碎冰蓝99朵玫瑰送女友鲜花速递全国配送广州上海深圳</p>
-                        <h2>￥86.72</h2>
+                        <p>黑边白玫瑰玫瑰七夕送女友鲜花</p>
+                        <h2>￥80.22</h2>
                         <h3>5000+人已付款 四川</h3>
                     </div>
                 </a>
@@ -1263,8 +1334,8 @@
                 <a href="#" style="text-decoration: none;">
                     <img src="../res/images/6.jpg" class="adv_img">
                     <div class="adv_price">
-                        <p>  碎冰蓝99朵玫瑰送女友鲜花速递全国配送广州上海深圳</p>
-                        <h2>￥86.72</h2>
+                        <p>  粉红玫瑰大小朵混搭七夕送女友鲜花速递全国配送</p>
+                        <h2>￥110.20</h2>
                         <h3>5000+人已付款 四川</h3>
                     </div>
                 </a>

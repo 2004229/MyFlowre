@@ -40,17 +40,18 @@
 .menu_col a{
 	text-decoration: none;
 }
-
+.menu_col img{
+	display: inline-block;
+}
 .menu_col a img{
 	height: 70px;
-	width: 70px;
-	border-radius: 30px;
+	width: 60px;
+	border-radius: 3px;
 }
 .menu_col a h3{
 	margin: 0;
-	padding-left: 10px;
 	display: inline-block;
-	color: #bf1e1e;
+	color: #f30000;
 	font-size: 25px;
 }
 /*中间主体部分样式*/
@@ -165,6 +166,7 @@
 .adv_price p{
 	font-size: 12px;
 	color: #a56262;
+	height: 24px;
 }
 .adv_price h2{
 	display: inline-block;
