@@ -1,5 +1,5 @@
 <component name="ArtifactManager">
-  <artifact type="exploded-war" name="MyFlowre:war exploded">
+  <artifact type="exploded-war" name="MyFlowre">
     <output-path>$PROJECT_DIR$/out/artifacts/MyFlowre_war_exploded</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="MyFlowre/web/Web" />

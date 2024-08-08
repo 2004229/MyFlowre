@@ -1,3 +1,4 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +40,7 @@
         </div>
     </div>
 </div>
-    <script>
+<script>
         const imgListOne = document.querySelector('.img-list')
         // 获取图片类数组，并将其转化为数组
         let imgBoxList = Array.prototype.slice.call(document.querySelectorAll('.img-list .img-box'))
@@ -192,15 +193,15 @@
     <!--登录框-->
     <div class="form-box login">
         <h2>登录</h2>
-        <form action="Menu.jsp">
+        <form action="${pageContext.request.contextPath}/LoginServlet" method="post" accept-charset="UTF-8">
             <div class="input-box">
                 <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                <input type="text" required>
-                <label>邮箱</label>
+                <input type="text" name="username" required>
+                <label>用户名</label>
             </div>
             <div class="input-box">
                 <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                <input type="password" required>
+                <input type="password" name="password" required>
                 <label>密码</label>
             </div>
             <div class="remember-forgot">
