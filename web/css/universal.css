@@ -1,5 +1,7 @@
 @charset "UTF-8";
-
+/*
+*通用导航栏和底部版权区样式表
+*/
 body{
     font-family: 方正姚体, serif;
     font-size: 25px;

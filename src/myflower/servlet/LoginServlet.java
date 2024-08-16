@@ -12,7 +12,7 @@ import myflower.db.demo.UserService;
 /*
 * 用户登录处理
 * */
-//@WebServlet("/LoginServlet")
+//@WebServlet("/Login")
 public class LoginServlet extends HttpServlet {
     public void doGet(HttpServletRequest request, HttpServletResponse response)
             throws IOException, ServletException {
@@ -35,12 +35,14 @@ public class LoginServlet extends HttpServlet {
         if (user != null) {
             // 跳转到登录成功页面，传递用户名
             request.setAttribute("user", user);
-            //request.getRequestDispatcher("Menu.jsp").forward(request,response);
-            response.sendRedirect("Pages/Menu.jsp");
+            request.setAttribute("message", "登录成功！");
+            request.getRequestDispatcher("Pages/Menu.jsp").forward(request,response);
+            //response.sendRedirect("Pages/Menu.jsp");
         } else {
             // 跳转到登录失败页面，传递用户名
-            //request.getRequestDispatcher("mine.jsp").forward(request,response);
-            response.sendRedirect("Pages/Login.jsp");
+            request.setAttribute("message", "登录失败！");
+            request.getRequestDispatcher("Pages/Login.jsp").forward(request,response);
+            //response.sendRedirect("Pages/Login.jsp");
         }
     }
 }

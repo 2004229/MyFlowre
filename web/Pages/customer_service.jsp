@@ -1,12 +1,13 @@
+<%@ page contentType="text/html;charset=utf-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="../bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../css/universal.css" rel="stylesheet">
-    <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
-    <title>退出登录</title>
+    <link href="${pageContext.request.contextPath}/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/css/universal.css" rel="stylesheet">
+    <script src="${pageContext.request.contextPath}/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <title>联系客服</title>
 </head>
 <body>
 <!------------------------------------------------------------------------------------------------------------------>
@@ -22,13 +23,13 @@
             </a>
             <!-- Logo下拉菜单 -->
             <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownNavLink" style="background-image:linear-gradient(0deg,#a8edea 0%, #fed6e3 100%)">
-                <li><a class="dropdown-item " href="Menu.jsp" aria-current="page">商城</a></li>
-                <li><a class="dropdown-item" href="../Pages/order.html">我的订单</a></li>
-                <li><a class="dropdown-item" href="../Pages/shopcart.html">购物车</a></li>
-                <li><a class="dropdown-item" href="../Pages/news.html">消息</a></li>
+                <li><a class="dropdown-item " href="${pageContext.request.contextPath}/Pages/Menu.jsp" aria-current="page">商城</a></li>
+                <li><a class="dropdown-item" href="${pageContext.request.contextPath}/Pages/order.jsp">我的订单</a></li>
+                <li><a class="dropdown-item" href="${pageContext.request.contextPath}/Pages/shopcart.jsp">购物车</a></li>
+                <li><a class="dropdown-item" href="${pageContext.request.contextPath}/Pages/news.jsp">消息</a></li>
                 <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="../Pages/footprint.html">足迹</a></li>
-                <li><a class="dropdown-item" href="../Pages/customer_service.html">联系客服</a></li>
+                <li><a class="dropdown-item" href="${pageContext.request.contextPath}/Pages/footprint.jsp">足迹</a></li>
+                <li><a class="dropdown-item active" href="${pageContext.request.contextPath}/Pages/customer_service.jsp">联系客服</a></li>
             </ul>
         </div>
 
@@ -45,11 +46,11 @@
                 </a>
                 <!-- 头像下拉菜单 -->
                 <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2" style="background-image:linear-gradient(0deg,#a8edea 0%, #fed6e3 100%)">
-                    <li><a class="dropdown-item " href="../Pages/mine.html">我的</a></li>
-                    <li><a class="dropdown-item " href="../Pages/collect.html">收藏</a></li>
-                    <li><a class="dropdown-item" href="../Pages/set.html">设置</a></li>
+                    <li><a class="dropdown-item " href="${pageContext.request.contextPath}/Pages/mine.jsp">我的</a></li>
+                    <li><a class="dropdown-item " href="${pageContext.request.contextPath}/Pages/collect.jsp">收藏</a></li>
+                    <li><a class="dropdown-item" href="${pageContext.request.contextPath}/Pages/set.jsp">设置</a></li>
                     <li><hr class="dropdown-divider"></li>
-                    <li><a class="dropdown-item active" href="../Pages/sign_out.html">退出登录</a></li>
+                    <li><a class="dropdown-item" href="${pageContext.request.contextPath}/Pages/Login.jsp">退出登录</a></li>
                 </ul>
             </div>
         </div>

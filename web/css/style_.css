@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
-
+/*登录注册界面样式表*/
 * {
     margin: 0;
     padding: 0;
@@ -27,6 +27,7 @@ header{
     align-items: center;
     z-index: 99;
 }
+
 .logo{
     font-family: 方正舒体, serif;
     font-size: 10em;

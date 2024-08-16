@@ -5,15 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>登录</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/style_.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style.css">
+    <link rel="stylesheet" href="${pageContext.request.contextPath}/css/style_.css">
+    <script src="${pageContext.request.contextPath}/js/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // 检查request中是否有消息
+            var message = '${requestScope.message}';
+            if(message) {
+                alert(message); // 弹出消息
+            }
+        });
+    </script>
 </head>
 <body>
 <div class="title">
-    <p>小熊的花店</p>
+    <p>Linli后花园</p>
 </div>
 <header>
-    <h2 class="logo">fafa~~</h2>
+    <h2 class="logo">Linli~~</h2>
     <nav class="navigation">
         <button class="btnLogin-popup">登录</button>
     </nav>
@@ -21,22 +31,22 @@
 <div id="banner" >
     <div class="img-list img-wrapper">
         <div class="img-box">
-            <img src="../res/images/13.png" alt="">
+            <img src="${pageContext.request.contextPath}/res/images/13.png" alt="">
         </div>
         <div class="img-box">
-            <img src="../res/images/14.png" alt="">
+            <img src="${pageContext.request.contextPath}/res/images/14.png" alt="">
         </div>
         <div class="img-box">
-            <img src="../res/images/15.png" alt="">
+            <img src="${pageContext.request.contextPath}/res/images/15.png" alt="">
         </div>
         <div class="img-box">
-            <img src="../res/images/16.png" alt="">
+            <img src="${pageContext.request.contextPath}/res/images/16.png" alt="">
         </div>
         <div class="img-box">
-            <img src="../res/images/17.png" alt="">
+            <img src="${pageContext.request.contextPath}/res/images/17.png" alt="">
         </div>
         <div class="img-box" id="last-img-box">
-            <img src="../res/images/6.jpg" alt="">
+            <img src="${pageContext.request.contextPath}/res/images/6.jpg" alt="">
         </div>
     </div>
 </div>
@@ -193,7 +203,7 @@
     <!--登录框-->
     <div class="form-box login">
         <h2>登录</h2>
-        <form action="${pageContext.request.contextPath}/LoginServlet" method="post" accept-charset="UTF-8">
+        <form action="${pageContext.request.contextPath}/Login" method="post" accept-charset="UTF-8">
             <div class="input-box">
                 <span class="icon"><ion-icon name="mail"></ion-icon></span>
                 <input type="text" name="username" required>
@@ -217,24 +227,24 @@
     <!--注册框-->
     <div class="form-box register">
         <h2>注册账号</h2>
-        <form action="#">
+        <form action="${pageContext.request.contextPath}/Register">
             <div class="input-box">
                 <span class="icon"><ion-icon name="person"></ion-icon></span>
-                <input type="text" required>
+                <input type="text" name="username" required>
                 <label>用户名</label>
             </div>
             <div class="input-box">
                 <span class="icon"><ion-icon name="mail"></ion-icon></span>
-                <input type="text" required>
-                <label>邮件</label>
+                <input type="text" name="telephone" required>
+                <label>电话号码</label>
             </div>
             <div class="input-box">
                 <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
-                <input type="password" required>
+                <input type="password" name="password" required>
                 <label>密码</label>
             </div>
             <div class="remember-forgot">
-                <label><input type="checkbox">勾选代表同意<a href="#">用户隐私服务</a> </label>
+                <label><input type="checkbox">勾选代表同意<a href="#">用户协议</a><a href="#">隐私政策</a> </label>
             </div>
             <button type="submit" class="btn">注册</button>
             <div class="login-register">
@@ -243,11 +253,10 @@
         </form>
     </div>
 </div>
-<script src="../js/login_check.js"></script>
-<script src="../js/style.js"></script>
+<script src="${pageContext.request.contextPath}/js/login_check.js"></script>
+<script src="${pageContext.request.contextPath}/js/style.js"></script>
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 <!------------------------------------------------------------------------------------------------------------------>
-
 </body>
 </html>
