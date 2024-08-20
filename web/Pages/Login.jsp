@@ -11,7 +11,7 @@
     <script type="text/javascript">
         $(document).ready(function() {
             // 检查request中是否有消息
-            var message = '${requestScope.message}';
+            const message = '${requestScope.message}';
             if(message) {
                 alert(message); // 弹出消息
             }

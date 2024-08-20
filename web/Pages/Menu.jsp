@@ -551,10 +551,10 @@
                 <div id="content1" class="content container-fluid" style="display: flex;">
                     <div class="row">
                         <div class="col-4">
-                            <a class="product-link" href="shoping.jsp" style="text-decoration: none;">
+                            <a class="product-link" href="${pageContext.request.contextPath}/Pages/shoping.jsp" style="text-decoration: none;">
                                 <img src="${pageContext.request.contextPath}/res/images/125.jpg" class="content_img" alt="">
                                 <div class="content_price">
-                                    <p>  碎冰蓝99朵玫瑰送女友鲜花速递全国配送广州上海深圳</p>
+                                    <p>碎冰蓝99朵玫瑰送女友鲜花速递全国配送广州上海深圳</p>
                                     <h2>￥86.72</h2>
                                     <h3>5000+人已付款 四川</h3>
                                     <h4>官方立减10.7元 满68减3 包邮</h4>

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="${pageContext.request.contextPath}/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="${pageContext.request.contextPath}/css/universal.css" rel="stylesheet">
-    <link href="${pageContext.request.contextPath}/css/Menu.css" rel="stylesheet">
+    <link href="${pageContext.request.contextPath}/css/shoping.css" rel="stylesheet">
     <script src="../bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
     <script src="../js/jquery-3.5.1/jquery-3.5.1.min.js"></script>
     <title>购买页</title>
@@ -60,11 +60,129 @@
         </div>
     </div>
 </header>
-<!------------------------------------------------------------------------------------------------------------------>
 
 <main>
-    <br><br><br><br><br><br><br>
-    <br><br><br><br><br><br><br>
+    <div class="up">
+        <div class="left">
+            <img src="${pageContext.request.contextPath}/res/images/18.jpg" alt="">
+        </div>
+        <div class="right">
+            <div class="details">
+                <h1>商品名称</h1>
+                <h2>商品简介</h2>
+                <p>￥100.99<span style="text-decoration: line-through;color: #bab9b6">￥200</span></p>
+            </div>
+            <div class="title">
+                选择交易方式:
+            </div>
+            <ul>
+                <li tabindex="0">邮寄</li>
+                <li tabindex="0">线下交易</li>
+            </ul>
+            <div class="title">
+                数量:
+            </div>
+            <div class="quantity-slider">
+                <button class="decrease">-</button>
+                <label>
+                    <input type="range" class="quantity-range" min="0" max="100" value="0" />
+                </label>
+                <span class="quantity-value">0</span>
+                <button class="increase">+</button>
+            </div>
+            <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const decreaseBtn = document.querySelector('.decrease');
+                    const increaseBtn = document.querySelector('.increase');
+                    const quantityRange = document.querySelector('.quantity-range');
+                    const quantityValue = document.querySelector('.quantity-value');
+
+                    let isIncreasing = false;
+                    let isDecreasing = false;
+
+                    // 更新滑轮值的函数
+                    function updateQuantity(increment) {
+                        let currentQuantity = parseInt(quantityRange.value, 10);
+                        let maxQuantity = quantityRange.max; // 直接使用属性而不是parseInt
+                        currentQuantity = Math.min(currentQuantity + increment, maxQuantity); // 应用增量并不超过最大值
+                        currentQuantity = Math.max(currentQuantity, 0); // 确保数量不小于0
+                        quantityRange.value = currentQuantity; // 设置新的值
+                        quantityValue.textContent = currentQuantity; // 更新数量显示
+                    }
+
+
+
+                    // 增加数量按钮的长按事件
+                    increaseBtn.addEventListener('mousedown', function() {
+                        isIncreasing = true;
+                        increaseContinuously();
+                    });
+
+                    function increaseContinuously() {
+                        if (isIncreasing) {
+                            updateQuantity(1); // 增加1
+                            setTimeout(increaseContinuously, 100); // 每100毫秒增加一次
+                        }
+                    }
+
+                    increaseBtn.addEventListener('mouseup', function() {
+                        isIncreasing = false;
+                    });
+
+                    // 减少按钮的长按事件
+                    decreaseBtn.addEventListener('mousedown', function() {
+                        isDecreasing = true;
+                        decreaseContinuously();
+                    });
+
+                    function decreaseContinuously() {
+                        if (isDecreasing) {
+                            updateQuantity(-1); // 减少1
+                            setTimeout(decreaseContinuously, 100); // 每100毫秒减少一次
+                        }
+                    }
+
+                    decreaseBtn.addEventListener('mouseup', function() {
+                        isDecreasing = false;
+                    });
+                    // 滑动条值改变时更新数量的事件
+                    quantityRange.addEventListener('input', function() {
+                        updateQuantity(0);
+                    });
+                });
+            </script>
+            <div class="shop">
+                <form action="#" method="post"> <!-- 表单提交到的服务器端点和方法 -->
+                    <button type="submit" class="bt">加入购物车</button>
+                    <button type="submit" class="bt">收藏</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+    <div class="down">
+        <div class="menu">
+            <a href="#section1">参数信息</a>
+            <a href="#section2">图文详情</a>
+        </div>
+        <div id="section1">
+            <h3>参数信息</h3>
+            <br><br><br><br><br>
+        </div>
+        <div id="section2">
+            <h3>图文详情</h3>
+            <br><br><br><br><br>
+        </div>
+        <div class="introduce">
+            <p>价格说明</p>
+            <p>划线价格</p>
+            商品的专柜价、吊牌价、正品零售价、厂商指导价或该商品展示过的零售价等，并非原价，仅供参考。
+            <p>未划线价格</p>
+            商品的实时标价，不因表述的差异而改变价格。具体的销售价格根据商品参加活动或使用优惠券发生变化，最终以订单结算页价格为准。
+            <p>其他</p>
+            如商家对划线价格有单独描述，则以商家描述为标准，具体价格规范见<a href="#" style="text-decoration: none;color: #f69500">《Linli价格发布规范》</a>。
+        </div>
+    </div>
 </main>
 
 
@@ -104,6 +222,5 @@
         &copy; 2024 森有林木. 版权所有
     </div>
 </footer>
-<!------------------------------------------------------------------------------------------------------------------>
 </body>
 </html>
